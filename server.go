@@ -88,7 +88,7 @@ func (server *Server) Serve() {
 	for {
 		conn, err := server.listener.Accept()
 		if err != nil {
-			//log.Print("Serv:", err.Error())
+			//log.Print("Serv:", err.Error()) // todo
 			continue
 		}
 		connTcp := conn.(*net.TCPConn)
